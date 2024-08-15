@@ -9,11 +9,12 @@ if sys.version_info.major < 3:
     sys.exit(1)
 
 import platform
-if platform.system() == 'Windows' or platform.system() == 'Darwin':
-    import os
-    # set env variable so pysdl2 can find sdl2.dll
-    os.environ['PYSDL2_DLL_PATH'] = '.'
-    sys.path += ['.']
+# Nodar - don't do this because we want pysdl2-dll to give the path automatically
+#if platform.system() == 'Windows' or platform.system() == 'Darwin':
+#    import os
+#    # set env variable so pysdl2 can find sdl2.dll
+#    os.environ['PYSDL2_DLL_PATH'] = '.'
+#    sys.path += ['.']
 
 # fix the working directory when running in a mac app
 if platform.system() == 'Darwin' and hasattr(sys, 'frozen'):

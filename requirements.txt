@@ -1,5 +1,0 @@
-appdirs==1.4.0
-numpy==1.20.1
-Pillow==8.1.2
-PyOpenGL==3.1.5
-PySDL2==0.9.7

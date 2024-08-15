@@ -1,3 +1,9 @@
+This repo is a fork intended for my own personal use, and is not kept up-to-date with the [official project](https://heptapod.host/jp-lebreton/playscii/) from JP LeBrenton.
+
+The primary purpose of this fork is to use [pixi](https://pixi.sh/latest/) for dependency management.
+
+To launch, install `pixi`, and run `pixi run playscii`
+
 # PLAYSCII - an ASCII art and game creation tool
 
 Playscii (pronounced play-skee) is an art, animation, and game creation tool.

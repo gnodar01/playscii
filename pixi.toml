@@ -1,0 +1,25 @@
+[project]
+name = "playscii"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Nodar Gogoberidze <gnodar01@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["osx-64"]
+
+[tasks]
+# PYSDL2_DLL_PATH
+playscii = { cmd = ["python", "playscii.py"], env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll" } }
+#playscii = { cmd = ["python", "playscii.py"], clean-env = true, env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll", ZZZ = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll" } }
+#playscii = { cmd = ["python", "playscii.py"] }
+doit = { cmd = ["echo", "$PYSDL2_DLL_PATH", " ", "$ZZZ"], env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll", ZZZ = "hello"} }
+
+[dependencies]
+python = "3.9.*"
+numpy = "==1.21"
+appdirs = ">=1.4.4,<2"
+pillow = ">=9,<10"
+pyopengl = "3.*"
+pysdl2 = "0.9.*"
+
+[pypi-dependencies]
+pysdl2-dll = ">=2.30.2, <3"

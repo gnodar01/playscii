@@ -1,0 +1,18 @@
+libSDL2.dylib
+libSDL_mixer.dylib
+dist/*.*
+build/*.*
+__pycache__/*.*
+.idea/*.*
+playscii.profile
+profile.png
+autoplay_this_game
+.DS_Store
+./*.dll
+docs/html/generated/*.*
+playscii.spec
+
+
+# pixi environments
+.pixi
+*.egg-info
