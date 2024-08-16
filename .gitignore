@@ -3,6 +3,7 @@ libSDL_mixer.dylib
 dist/*.*
 build/*.*
 __pycache__/*.*
+**/__pycache__
 .idea/*.*
 playscii.profile
 profile.png
