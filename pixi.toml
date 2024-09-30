@@ -6,8 +6,10 @@ authors = ["Nodar Gogoberidze <gnodar01@gmail.com>"]
 channels = ["conda-forge"]
 platforms = ["osx-64"]
 
+[activation]
+env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll" }
+
 [tasks]
-# PYSDL2_DLL_PATH
 playscii = { cmd = ["python", "playscii.py"], env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll" } }
 
 [dependencies]
