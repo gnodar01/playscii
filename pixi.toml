@@ -9,9 +9,6 @@ platforms = ["osx-64"]
 [tasks]
 # PYSDL2_DLL_PATH
 playscii = { cmd = ["python", "playscii.py"], env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll" } }
-#playscii = { cmd = ["python", "playscii.py"], clean-env = true, env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll", ZZZ = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll" } }
-#playscii = { cmd = ["python", "playscii.py"] }
-doit = { cmd = ["echo", "$PYSDL2_DLL_PATH", " ", "$ZZZ"], env = { PYSDL2_DLL_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib/python3.9/site-packages/sdl2dll/dll", ZZZ = "hello"} }
 
 [dependencies]
 python = "3.9.*"
